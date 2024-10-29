@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(51, 51, 51, 0.8);
+    z-index: 1000;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #bb86fc;
+}
+
+/* Header Section */
+#header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000;
+    padding-top: 120px; 
+}
+
+/* Main Heading with Animations */
+.main-heading h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #fff;
+    display: inline-block;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.main-heading h1:hover {
+    color: #bb86fc;
+    transform: scale(1.1); 
+    text-shadow: 0px 4px 20px rgba(187, 134, 252, 0.8);
+}
+
+/* Paragraph */
+.main-heading p {
+    font-size: 1.3rem;
+    margin: 20px 0;
+    color: #bbb;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Call-to-Action Button */
+.cta {
+    padding: 10px 20px;
+    background-color: #bb86fc;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+.cta:hover {
+    background-color: #9a68db;
+    transform: translateY(-5px);
+}
+
+/* About Me Section with Image */
+#about {
+    padding: 80px 80px; 
+    background-color: #000000;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#about img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+    border: 5px solid rgba(255, 255, 255, 0.2); 
+}
+
+/* Hover Effect: Add subtle glow and scale up */
+#about img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 15px 30px rgba(187, 134, 252, 0.8); 
+    border: 5px solid rgba(187, 134, 252, 0.8); 
+}
+
+/* Optional background gradient around the image */
+.image-wrapper {
+    position: relative;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#about p {
+    color: #bbb;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Skills Section */
+#skills {
+    hover {
+    transform: scale(1.1);
+    box-shadow: 0px 15px 30px rgba(187, 134, 252, 0.8);
+    border: 5px solid rgba(187, 134, 252, 0.8); 
+}
+    padding: 80px 80px; 
+    background-color: #333;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-item {
+    background-color: #000000;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.skill-item h3 {
+    color: #bb86fc;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    color: #bbb;
+    font-size: 1rem;
+}
+
+/* Work Section Styling */
+#work {
+    padding: 80px 80px;
+    background-color: #000000;
+    text-align: center;
+    color: white;
+}
+
+#work h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 30px;
+}
+
+.work-item {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.work-item img {
+    width: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    height: auto; 
+    object-fit: cover;
+}
+
+.work-item h3 {
+    color: #bb86fc;
+    margin-bottom: 10px;
+}
+
+.work-item p {
+    color: #bbb;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.work-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #bb86fc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.work-links a:hover {
+    color: #9a68db;
+}
+
+
+/* Contact Section */
+#contact {
+    padding: 80px 80px; 
+    background-color: #000000;
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact input,
+#contact textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+#contact button {
+    padding: 10px;
+    background-color: #bb86fc;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #9a68db;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#skills {
+    padding: 80px 80px;
+    background-color: #000;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill-bubble {
+    background-color: #bb86fc;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: playfulFloat 6s ease-in-out infinite; 
+}
+
+/* Add randomness to each bubble's floating animation */
+.skill-bubble:nth-child(2n) {
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+}
+
+.skill-bubble:nth-child(3n) {
+    animation-duration: 8s;
+    animation-timing-function: ease-in;
+}
+
+.skill-bubble:nth-child(4n) {
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+}
+
+/* More playful floating animation */
+@keyframes playfulFloat {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(30px, -40px) rotate(10deg);
+    }
+    50% {
+        transform: translate(-20px, 30px) rotate(-10deg);
+    }
+    75% {
+        transform: translate(40px, 10px) rotate(5deg);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
